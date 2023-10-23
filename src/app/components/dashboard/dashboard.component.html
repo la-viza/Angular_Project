@@ -1,0 +1,8 @@
+<h2>Top Breakfast</h2>
+<div class="breakfast-menu">
+
+
+  <a *ngFor="let breakfast of breakfasts" routerLink="/breakfast/{{breakfast.name}}">
+    {{breakfast.name}}
+  </a>
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <h2>Breakfasts</h2>
+  <ul class="breakfasts">
+    <li *ngFor="let breakfast of breakfastsArray">
+      <button (click)="onSelect(breakfast)">
+        <span class="badge">
+          {{ breakfast.price | currency : "GBP" }}
+        </span>
+        <span class="name">{{ breakfast.name }}</span>
+      </button>
+    </li>
+  </ul>
+</div>

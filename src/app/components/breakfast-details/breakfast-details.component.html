@@ -1,0 +1,12 @@
+<div *ngIf="breakfastDetails">
+  <h2>{{ breakfastDetails.name | uppercase }} Details</h2>
+  <div>price: {{breakfastDetails.price | currency : "GBP" : "symbol" }}</div>
+  <div>
+    <label for="breakfast-name">Breakfast name: </label>
+    <input
+      id="breakfast-name"
+      [(ngModel)]="breakfastDetails.name"
+      placeholder="name"
+    />
+  </div>
+</div>
